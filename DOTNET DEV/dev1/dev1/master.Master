@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="dev1.master" %>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Shakal CMS DEV 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo"><a href="default.aspx">CMS DEV 1</a></div>
+        </header>
+
+        <!-- Main -->
+        <section id="main">
+            <div>
+
+                <!-- One -->
+                <section id="one" class="wrapper style1">
+
+                    <div class="image fit flush">
+                    </div>
+                    <header class="special">
+                        <nav>
+                            <ul class="my-row">
+                                <li><a href="index.aspx">Index</a></li>
+                                <li><a href="show.aspx">Show all wares</a></li>
+                                <li><a href="admin.aspx">Admin page</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    
+
+                        
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                       
+
+                   
+                </section>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                </ul>
+            </div>
+            <div class="copyright">
+              
+            </div>
+        </footer>
+
+
+    </form>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
