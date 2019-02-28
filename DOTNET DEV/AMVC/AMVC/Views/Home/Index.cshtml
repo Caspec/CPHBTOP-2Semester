@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>WELCOME</h1>
+    <p class="lead">HALLO BEAR</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Discover ASP.NET &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>STARTUP</h2>
+        <p>
+            HALLO SHAKAL STARTUP.....<br />
+            @DateTime.Now.AddDays(1).ToLongDateString()
+
+        </p>
+        <div class="col-md-8">
+            @using (Html.BeginForm())
+            {
+                @Html.TextBox("searchCriteria")
+                <input type="submit" value="Find products" />
+            }
+        </div>
+        <div class="col-md-8">
+            <h2>Our products</h2>
+            <table class="table-striped table-bordered table-responsive">
+               @foreach (var product in Model)
+               {
+                   <tr>
+                       <td>@product.Name</td>
+                       <td>@product.Description</td>
+                       <td>@Html.ActionLink("Details", "Details", new { id = product.ID })</td>
+                   </tr>
+                   }
+            </table>
+        </div>
+    </div>
+  
+</div>
