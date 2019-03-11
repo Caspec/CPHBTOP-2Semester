@@ -1,0 +1,29 @@
+Hand-inn deadline 21/3 (14.00)
+
+Make a program with these minimum requirements:
+
+    HTML, CSS file and JS file must be separated into 3 files.
+    The program should have at least 7 different elements e.g. buttons, text, list, div, submit
+    All seven elements should 7 different events
+    e.g. key events, click events, mouse over, document load etc.
+    The 7 different events should manipulate 7 different divs or other html elements 
+    Be creative, make something  you enjoy smiler
+
+
+button - onlick - bgcolor
+
+input - keydown, keyup - color
+
+a - ondragend - open window
+
+img - mouseover - frame(move)
+
+select & span - ondragenter - selectedIndex
+
+div - mouseout - document.getElementById("box").style.width + height
+
+input submit - mouseenter - alert()
+
+body - onload -  document.getElementById("area").innerHTML = str.repeat(2);
+
++ 2 mere på samme elementer

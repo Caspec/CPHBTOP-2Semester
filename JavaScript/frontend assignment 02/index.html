@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend assignment 02 - JavaScript</title>
+  <meta name="description" content="Shakal AS">
+  <meta name="author" content="Shakal AS">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadData()">
+
+	<h1>Hallo world in frontend vanilla JavaScript... document.getElementById() and alert()</h1>
+
+	<div>
+    <button type="button" onclick="changeBGColor()">Change BG Color</button>
+    <button type="button" onclick="resetChangeBGColor()">Reset BG Color</button>
+  </div>
+
+  <div class="spacer"></div>
+
+  <form> 
+      <input type="button" id="komack" value="Start komack">
+  </form>
+      <p id="komackp">The komack is stopped.</p>
+
+  <div class="spancer"></div>
+
+  <div>
+    <input type="text" name="keydown" id="key" onkeydown="keyDown()" onkeyup="keyUp()" placeholder="onkeydown and onkeyup">
+  </div>
+
+  <div class="spacer"></div>
+
+  <div>
+  <ul id="myList">
+      <li>Coffee</li>
+      <li>Tea</li>
+  </ul>
+  <input type="text" placeholder="type something in here and add" id="list" name="list">
+  <button type="button" onclick="addToList()">Click to add to the list</button>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div>
+    <a href="#" ondragend="openWindow()">drag this link - on dragend</a>
+  </div>
+
+  <div class="spacer"></div>
+
+  <textarea rows="4" cols="50" id="area"></textarea>
+
+  <div class="spacer"></div>
+
+  <div>
+    <input type="submit" value="on mouse enter do you get the alert..." onmouseenter="a()">
+  </div>
+
+  <div class="spacer"></div>
+
+  <div>
+      <select id="select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+  </div>
+
+  <div class="spacer"></div>
+
+  <span ondragenter="select()">select ondragenter and get 1' index</span>
+
+  <div class="spacer"></div>
+
+  <div>
+    <div id="box"></div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div onmouseout="box()">onmouseout to big box</div>
+
+  <div class="spacer"></div>
+
+  <div>
+  <button type="button" onclick="stopMoveA()">reset Image</button>
+  </div>
+
+  <div id="moveC">
+    <img src="img/terry.png" id="moveA" onmouseover="move()">
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
