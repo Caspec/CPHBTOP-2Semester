@@ -1,5 +1,5 @@
 function changeBGColor(){
-    document.body.style.backgroundColor = "#134596";
+    document.querySelector('.body').style.backgroundColor = "#134596";
 }
 
 function resetChangeBGColor(){
