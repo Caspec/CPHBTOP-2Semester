@@ -1,10 +1,34 @@
-function changeBGColor(){
-    document.querySelector('.body').style.backgroundColor = "#134596";
+class Body {
+  constructor(color) {
+    this.color = color;
+  }
+  
+  getColor(){
+	  document.querySelector('.body').style.backgroundColor = this.color;
+  }
+  
 }
 
-function resetChangeBGColor(){
-    document.body.style.backgroundColor = "#FFF";
-}
+let c1 = new Body("#134596")
+let c2 = new Body("#FFFFFF")
+
+console.log(Body)
+
+document.querySelector('.changeBGColor').addEventListener("click", () => {
+  c1.getColor();
+});
+
+document.querySelector('.resetBGColor').addEventListener("click", () => {
+  c2.getColor();
+});
+
+//function changeBGColor(){
+//    document.querySelector('.body').style.backgroundColor = "#134596";
+//}
+
+//function resetChangeBGColor(){
+//    document.body.style.backgroundColor = "#FFF";
+//}
 
 function keyDown() {
     document.getElementById("key").style.color = "gray";
