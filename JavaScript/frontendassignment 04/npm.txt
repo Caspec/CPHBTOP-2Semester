@@ -1,0 +1,18 @@
+npm install
+npm install --save-dev webpack-dev-server
+
+npx webpack (lynda)
+
+npm start <--
+
+localhost:8080
+
+
+Compile:
+npm run build <-- Github
+npm start <-- Localhost webpack-dev-server
+
+
+`${country}: ` + data.name + " - <span class='rate'>" +  `${rate}: ` + data.rate + "</span><br>";
+
+`${last}: ${data.last} ${volumePercent}: ${data.volume_percent}% ${data.display_symbol}`;

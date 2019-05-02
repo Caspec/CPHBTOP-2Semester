@@ -1,0 +1,12 @@
+.btn-primary
+    background-color: $brand-primary
+    +border-color(3px solid green)
+    &:hover
+        background-color: darken($brand-primary, 50%)
+        +border-color(3px solid green)
+.btn-danger
+    +background-color(#000000)
+    border: 1px solid darken($brand-danger, 0%)
+    &:hover
+        +background-color(#000000)
+        border: 1px solid darken($brand-danger, 0%)
