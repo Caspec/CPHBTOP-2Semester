@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Action1";
+}
+
+@*listItems from model (parameter)*@
+@model string[]
+@{
+    var listItems = Model.Select(f => new SelectListItem() { Text = f });
+}
+
+@*listItems from ViewBag*@
+@*@{
+    var files = ViewBag.FilesList as string[];
+    var listItems = files.Select(f => new SelectListItem() { Text = f });
+}*@
+
+<h2>Files in
+    <strong>@ViewBag.Directory</strong>
+</h2>
+<div class="row">
+    <div class="col-xs-4">
+        <ul>
+            @foreach (var file in ViewBag.FilesList)
+            {
+                <li>@file</li>
+            }
+        </ul>
+    </div>
+    <div class="col-xs-4">
+        @Html.ListBox("myfiles", listItems)
+    </div>
+    <div class="col-xs-4">
+        @Html.DropDownList("myfiles2", listItems)
+    </div>
+    </div>
+
+

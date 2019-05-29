@@ -1,0 +1,12 @@
+﻿@model ArnaudCore.ViewModels.Home.ComputeProductViewModel
+
+<h2>Product of two numbers</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(m => m.Number1)
+    @Html.TextBoxFor(m => m.Number2)
+    <input type="submit" value="Compute" />
+}
+
+<label>Result : @Html.DisplayFor(m => m.Result)</label>

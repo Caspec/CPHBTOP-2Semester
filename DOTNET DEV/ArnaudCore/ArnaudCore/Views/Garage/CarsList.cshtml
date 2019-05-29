@@ -1,0 +1,16 @@
+﻿@model ArnaudCore.ViewModels.Garage.CarsListViewModel
+
+<h2>All cars</h2>
+@Html.ListBox("carsList", Model.CarsList)
+
+
+<h2>Fastest car</h2>
+<dl>
+    <dt>ID</dt>
+    <dd>@Model.FastestCar.ID</dd>
+    <dt>Model</dt>
+    <dd>@Model.FastestCar.Model</dd>
+    <dt>Max speed</dt>
+    <dd>@Model.FastestCar.MaxSpeed</dd>
+</dl>
+
